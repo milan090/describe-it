@@ -1,0 +1,44 @@
+{
+  "name": "Describe It",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon-34.png"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "background": {
+    "scripts": ["backgroundScript.bundle.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["contentScript.bundle.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "content.styles.css",
+    "icon-128.png",
+    "icon-34.png"
+  ],
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "clipboardWrite",
+    "<all_urls>",
+    "storage"
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Space",
+        "mac": "Command+Space",
+        "chromeos": "Ctrl+Space",
+        "linux": "Ctrl+Space"
+      }
+    }
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

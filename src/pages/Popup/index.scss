@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  width: 320px;
+  height: 600px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: relative;
+  color: white;
+  background-color: #282c34;
+}
+
+/* ---- CUSTOM SCROLL BAR ------ Start */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 2px;
+  background-color: rgb(233, 233, 233);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #50b3c9;
+  border-radius: 10px;
+}
+
+/* ---- CUSTOM SCROLL BAR ------ End */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
