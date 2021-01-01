@@ -21,3 +21,4 @@ secrets.*.js
 
 # other
 .vscode
+*.zip

@@ -32,7 +32,7 @@ export const ThemeSwitch = () => {
 
   return (
     <div onClick={handleToggleTheme} className="cursor-pointer">
-      {theme === "LIGHT" ? <Sun size={16} /> : <Moon size={16} />}
+      {theme === "LIGHT" ? <Sun size={14} /> : <Moon size={14} />}
     </div>
   );
 };

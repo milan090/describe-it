@@ -2,6 +2,8 @@ import React from "react";
 import { NavTabs } from "../nav-tabs/nav-tabs.component";
 import { ThemeSwitch } from "../theme-swtich/theme-switch.component";
 
+import { Sliders } from "react-feather";
+
 import Logo from "../../../../assets/img/logo.svg";
 
 type Props = {
@@ -14,6 +16,17 @@ export const Header: React.FC<Props> = ({ selectedText }) => {
       <div className="h-full">
         <div id="top" className="px-4 pt-3 mb-4">
           <div className="flex justify-between flex-row items-center">
+            <span
+              className="cursor-pointer tooltip"
+              onClick={() => {
+                chrome.tabs.create({
+                  url: "chrome://extensions/configureCommands",
+                });
+              }}
+            >
+              <Sliders size={14} />
+              <span className="tooltiptext tooltipright">Change Shortcut</span>
+            </span>
             <span
               id="logo"
               className="text-base font-bold whitespace-nowrap dark:text-light flex justify-center items-center"
