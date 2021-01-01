@@ -2,6 +2,7 @@
 
 # Describe-It
 Don't know what something means? Just select the text and hit the keyboard shortcut! And you got everything you want to know about it.
+**Note: Currently full support is present only for Google Chrome. It might work on other browsers too but full support is not guaranteed**
 
 ## Table Of Content
 
