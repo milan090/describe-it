@@ -1,7 +1,8 @@
 import React from "react";
-import { NavTabsContext } from "../../context/nav-tabs/nav-tabs.context";
 import { NavTabs } from "../nav-tabs/nav-tabs.component";
 import { ThemeSwitch } from "../theme-swtich/theme-switch.component";
+
+import Logo from "../../../../assets/img/logo.svg";
 
 type Props = {
   selectedText: string;
@@ -15,8 +16,9 @@ export const Header: React.FC<Props> = ({ selectedText }) => {
           <div className="flex justify-between flex-row items-center">
             <span
               id="logo"
-              className="text-base font-bold whitespace-nowrap dark:text-light"
+              className="text-base font-bold whitespace-nowrap dark:text-light flex justify-center items-center"
             >
+              <img src={Logo} width="22px" className="mr-3" />
               Describe-It
             </span>
             <span id="theme-switch">
