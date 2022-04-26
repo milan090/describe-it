@@ -8,13 +8,16 @@ Don't know what something means? Just select the text and hit the keyboard short
 
 
 # Installing
-Chrome extension will be soon on chrome websote. It is currently under review.
 
-+ Download extension from https://sourceforge.net/projects/describe-it/
-- Extract the download zip file
+## From Chrome Web Store
+[Get here](https://chrome.google.com/webstore/detail/describe-it/mjjfbheclbnpfohkimmmkfeimdeilokf?hl=en)
+
+## From Source
+- Clone the reop
+- Install dependencies and run build command
 - Open Chrome extensions tab: Settings > More tools > Extensions
 - Turn on devloper mode in top right corner
-- Click "Load Unpacked" from top left corner and choose the extracted build folder
+- Click "Load Unpacked" from top left corner and choose the build folder
 
 # Usage
 ```Note: If you just loaded the extension, be sure to refresh the page to avoid any errors```
